@@ -296,8 +296,8 @@ public class CallNotifier extends Handler
         switch (msg.what) {
             case PHONE_NEW_RINGING_CONNECTION:
                 log("RINGING... (new)");
-                onNewRingingConnection((AsyncResult) msg.obj);
                 mSilentRingerRequested = false;
+                onNewRingingConnection((AsyncResult) msg.obj);
                 break;
 
             case PHONE_INCOMING_RING:
